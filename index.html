@@ -1,0 +1,68 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KaBuM! Clone - Tech Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">TECH STORE</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Busque aqui...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <nav class="user-nav">
+                <a href="#"><i class="fas fa-user"></i> Login</a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i> Carrinho (<span
+                        id="cart-count">0</span>)</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="categories-nav">
+        <div class="container">
+            <a href="#">PC Gamer</a>
+            <a href="#">Hardware</a>
+            <a href="#">Periféricos</a>
+            <a href="#">Monitores</a>
+            <a href="#">Smartphones</a>
+        </div>
+    </nav>
+
+    <section class="highlight-banner">
+        <h2>OFERTAS NINJA DO DIA!</h2>
+
+    </section>
+
+    <main class="main-content container">
+        <h3>Produtos em Destaque</h3>
+        <section id="product-list" class="product-grid">
+        </section>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h4>Seu Carrinho de Compras</h4>
+            <ul id="cart-items-list"></ul>
+            <p>Total: R$ <span id="cart-total">0.00</span></p>
+            <button class="checkout-button">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Tech Store Clone. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
